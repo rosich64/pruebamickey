@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto  auto auto;
+          gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid black;
+          text-align: center;
+          font-size: 30px;
+        }
+        </style>
+             </head>
+   <body>
+        
+        <h1>Mickeys watch</h1>
+        
+        
+        
+        <div class="grid-container">
+          <div></div>
+          <div>
+            <button  id="boton1" class="reproductor1" style="font-size: 24px;" >12 hs</button>
+            <audio  id="audio1" src=""></audio>
+          </div>
+          <div></div>  
+          <div>
+           <button  id="boton2" class="reproductor" style="font-size: 24px;" >3 hs</button>
+            <audio  id="audio2" src=""></audio>
+          </div>
+          <div></div>
+          <div>
+            <button  id="boton3" class="reproductor" style="font-size: 24px;" > 5 hs</button>
+            <audio  id="audio3" src=""></audio>
+          </div>
+          <div></div>
+          <div>
+            <button  id="boton4" class="reproductor" style="font-size: 24px;" >11 hs</button>
+            <audio  id="audio4" src=""></audio>
+          </div>
+          <div></div>
+        </div>
+
+        <script>
+            //boton1
+            
+            let boton1 = document.getElementById("boton1")
+    let audioEtiqueta1 = document.getElementById("audio1")
+
+    boton1.addEventListener("click", () => {
+      audioEtiqueta1.setAttribute("src", "lasdoce.mp3")
+      audioEtiqueta1.play()
+      console.log(`Reproduciendo: ${audioEtiqueta1.src}`)
+    })
+
+    //boton2
+    let boton2 = document.getElementById("boton2")
+    let audioEtiqueta2 = document.getElementById("audio2")
+
+    boton2.addEventListener("click", () => {
+      audioEtiqueta2.setAttribute("src", "lastres.mp3")
+      audioEtiqueta2.play()
+      console.log(`Reproduciendo: ${audioEtiqueta2.src}`)
+    })
+    //boton3
+    let boton3 = document.getElementById("boton3")
+    let audioEtiqueta3 = document.getElementById("audio3")
+
+    boton3.addEventListener("click", () => {
+      audioEtiqueta3.setAttribute("src", "lascinco.mp3")
+      audioEtiqueta3.play()
+      console.log(`Reproduciendo: ${audioEtiqueta3.src}`)
+    })
+    //boton4
+    let boton4 = document.getElementById("boton4")
+    let audioEtiqueta4 = document.getElementById("audio4")
+
+    boton4.addEventListener("click", () => {
+      audioEtiqueta4.setAttribute("src", "lasonce.mp3")
+      audioEtiqueta4.play()
+      console.log(`Reproduciendo: ${audioEtiqueta4.src}`)
+    })
+</script>
+        </body>
+
+</html>
